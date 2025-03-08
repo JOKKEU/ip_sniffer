@@ -106,7 +106,7 @@ example:
 (INFO) all receive bytes : 2185879
 (INFO) sniff time: 12
 ```
-ID operation 3 (UDP packet(global) + ip(sender)).
+ID operation 4 (UDP packet(global) + ip(sender)).
 example:
 ```
 ...
