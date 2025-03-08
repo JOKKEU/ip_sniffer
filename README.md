@@ -17,7 +17,7 @@ output:
 [sudo] password for ...: 
 [+] program copied to /usr/local/bin
 ===== PROG INSTALLED =====
-[+] run program (global scope) -> Replicant
+[+] run program (global scope) -> sniffer
 [+] Usage: sniffer --help
 ```
 Usage: sniffer --help.
