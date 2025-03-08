@@ -40,13 +40,13 @@ else
     
     if [[ "${os_name,,}" == "fedora" ]] || [[ "${os_name,,}" == "centos" ]]; then
         echo "[+] installing gcc"
-        sudo dnf install g++ -y  
+        sudo dnf install gcc -y  
     elif [[ "${os_name,,}" == "ubuntu" ]] || [[ "${os_name,,}" == "kali" ]]; then
-        echo "[+] installing g++"
-        sudo apt install g++ -y
+        echo "[+] installing gcc"
+        sudo apt install gcc -y
     elif [[ "${os_name,,}" == "arch" ]]; then
         echo "[+] installing gcc"
-        sudo pacman -S g++ --noconfirm 
+        sudo pacman -S gcc --noconfirm 
     else
         echo "Could not determine your OS"
         exit 1
