@@ -10,7 +10,7 @@ if [ "$1" == "--no-buffering" ]; then
 elif [ "$1" == "--buffering" ]; then
     BUFFERING_FLAG="-D BUFFERING=1"
 else
-    echo "Использование: $0 [--buffering | --no-buffering]"
+    echo "Using: $0 [(default) --buffering | --no-buffering]"
     exit 1
 fi
 
@@ -61,6 +61,11 @@ else
         exit 1
     fi
 fi
+
+if [ "$1" == "--buffering" ]; then
+	sudo pip install selenium bs4 webdriver-manager
+fi
+
 
 sudo cp $PROG_NAME /usr/local/bin
 echo "[+] program copied to /usr/local/bin"
