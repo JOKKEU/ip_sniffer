@@ -13,7 +13,7 @@ compiling without buffering
 git clone https://github.com/JOKKEU/ip_sniffer
 cd ip_sniffer
 if install.sh - non executable file: sudo chmod +x install.sh
-./install.sh [--buffering | --no-buffering]
+./install.sh [(usually) --buffering | --no-buffering]
 output:
 [+] directory created
 [+] moved to -> build
