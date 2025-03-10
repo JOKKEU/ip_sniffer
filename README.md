@@ -1,7 +1,9 @@
 **Program for sniff ip traffic on spicific interface + analysis ip data in the Linux system. Output to console or file.**
 
 parameters for compiling:
+
 compiling with buffering (output will be available after data collection + saving data to a file + analysis of IP addresses via the site [link](https://whatismyipaddress.com/))
+
 compiling without buffering
 
 **START**
@@ -26,14 +28,20 @@ output:
 ```
 
 sudo ./sniffer [iface index (example: 1] [id operation] [sniff time (sec)] [filename]
+
 we launch chromedriver or firefoxdriver
+
 example:
+
 jokkeu@jokkeu-host:~/.cache/selenium/chromedriver/linux64/127.0.6533.119$ ./chromedriver 
+
 python scrapping.py [browser (chrome or firefox)] [file name with initial data] [file name where to write data after processing]
 
 
 Usage: sniffer --help.
+
 ID operation 1 (simple all packet).
+
 example:
 ```
 jokkeu@jokkeu-host:~/Desktop/codes/ip_sniffer$ sudo sniffer 2 1 0 -
@@ -62,6 +70,7 @@ jokkeu@jokkeu-host:~/Desktop/codes/ip_sniffer$ sudo sniffer 2 1 0 -
 (INFO) sniff time: 5
 ```
 ID operation 2 (localnet + ip)(0.0.0.0 - from router).
+
 example:
 ```
 ...
@@ -84,6 +93,7 @@ example:
 (INFO) sniff time: 8
 ```
 ID operation 3 (TCP packet(global) + ip(sender)).
+
 example:
 
 ```
@@ -119,6 +129,7 @@ example:
 (INFO) sniff time: 12
 ```
 ID operation 4 (UDP packet(global) + ip(sender)).
+
 example:
 ```
 ...
