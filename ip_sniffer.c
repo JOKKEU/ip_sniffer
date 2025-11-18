@@ -91,7 +91,7 @@ static void buffer_log(struct ip_data* ip_d, struct parameters* params)
 	
 	if (strcmp(params->filename, "-") == 0) { return; }
 
-    // Исправляем открытие файла
+    
 	int fd = open(params->filename, O_RDWR | O_CREAT | O_APPEND, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	if (fd < 0) 
 	{
